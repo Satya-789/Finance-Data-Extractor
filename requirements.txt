@@ -1,5 +1,10 @@
+
 streamlit
 pandas
-langchain
-langchain-groq
 python-dotenv
+
+langchain==0.1.20
+langchain-core==0.1.52
+langchain-groq==0.1.4
+
+pydantic==2.7.4
