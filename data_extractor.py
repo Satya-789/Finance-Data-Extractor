@@ -3,11 +3,19 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.exceptions import OutputParserException
 from dotenv import load_dotenv
+import os
 
+# Load environment variables FIRST
 load_dotenv()
 
-llm = ChatGroq(model_name="llama-3.3-70b-versatile")
+# Get API key
+groq_api_key = os.getenv("GROQ_API_KEY")
 
+# Initialize LLM properly
+llm = ChatGroq(
+    model_name="llama-3.3-70b-versatile",
+    groq_api_key=groq_api_key
+)
 
 def extract(article_text):
     prompt = """
