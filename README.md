@@ -62,7 +62,7 @@ EPS came in at $1.50 compared to estimates of $1.30.
 | EPS     | 1.30      | 1.50   |
 
 ---
-
+Link to the app- https://finance-data-extractor-i9.streamlit.app/
 
 
 ---
